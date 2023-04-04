@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "10397e32-acbe-407d-90d2-01981d39dfcf",
+		"name": "1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "中国政府采购网-政策法规",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "searchparam",
+							"value": "农业",
+							"type": "default"
+						},
+						{
+							"key": "filedep",
+							"value": "财金",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://search.ccgp.gov.cn/zcfgsearch",
+					"protocol": "http",
+					"host": [
+						"search",
+						"ccgp",
+						"gov",
+						"cn"
+					],
+					"path": [
+						"zcfgsearch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "福建省人民政府",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "siteType",
+							"value": " 1",
+							"type": "text"
+						},
+						{
+							"key": "mainSiteId",
+							"value": " ff808081624641aa0162476c0e0e0055",
+							"type": "text"
+						},
+						{
+							"key": "siteId",
+							"value": " ff808081624641aa0162476c0e0e0055",
+							"type": "text"
+						},
+						{
+							"key": "depSiteId",
+							"value": " ff808081624641aa0162476c0e0e0055",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": " 1",
+							"type": "text"
+						},
+						{
+							"key": "page",
+							"value": " 1",
+							"type": "text"
+						},
+						{
+							"key": "rows",
+							"value": " 10",
+							"type": "text"
+						},
+						{
+							"key": "historyId",
+							"value": " 8a289fe387123cab01871306f2ae4be4",
+							"type": "text"
+						},
+						{
+							"key": "sourceType",
+							"value": " SSP_ZHSS",
+							"type": "text"
+						},
+						{
+							"key": "isChange",
+							"value": " 0",
+							"type": "text"
+						},
+						{
+							"key": "fullKey",
+							"value": " N",
+							"type": "text"
+						},
+						{
+							"key": "wbServiceType",
+							"value": " 13",
+							"type": "text"
+						},
+						{
+							"key": "siteName",
+							"value": " 全省",
+							"type": "text"
+						},
+						{
+							"key": "keyWord",
+							"value": "农业",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.fujian.gov.cn/ssp/search/api/search?time=1679651479364",
+					"protocol": "https",
+					"host": [
+						"www",
+						"fujian",
+						"gov",
+						"cn"
+					],
+					"path": [
+						"ssp",
+						"search",
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "time",
+							"value": "1679651479364"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
