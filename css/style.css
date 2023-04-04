@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .editor-content-view {
     border: 3px solid #ccc;
     border-radius: 5px;
@@ -55,6 +59,36 @@
     margin-right: 5px;
 }
 
-.editor-content-view img{
+.editor-content-view img {
     width: 100%;
+}
+
+.loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.card .btn:focus,
+.card .btn:focus-visible {
+    box-shadow: none;
+    outline: none;
+}
+
+.to-top {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    color: #333;
+}
+.to-top:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.to-top::after {
+    content: '返回顶部';
+    font-family: serif;
 }
