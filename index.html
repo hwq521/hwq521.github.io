@@ -12,7 +12,6 @@
 
 <body>
     <main>
-        <button id="submit">提交</button>
         <div class="mt-1 alert alert-primary" role="alert" id="exportCon" style="display:none">
             点击按钮导出postman请求组
             <button type="submit" class="btn btn-primary" id="export">导出</button>
@@ -40,32 +39,35 @@
                         <h2 class="mb-0">
                             <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
                                 data-target="#collapse-${key}" aria-expanded="true" aria-controls="collapse-${key}">
-                                ${item.name}[${item.url}]${!item.html?'[空]':''}
+                                ${item.name}[${item.url}]${!item.html ? '[空]' : ''}
                             </button>
                         </h2>
                     </div>
-
-                    <div id="collapse-${key}" class="collapse ${key === 0 ? 'show' : ''}" aria-labelledby="card-${key}"
+                    <div id="collapse-${key}" class="collapse" aria-labelledby="card-${key}"
                         data-parent="#accordionExample">
                         <div class="card-body editor-content-view">
                             ${item.html ? decodeURI(item.html) : '==暂无内容=='}
                         </div>
                     </div>
                 </div>
-                <a class="to-top" href="javascript:scrollTo(0,0);"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-</svg></a>
                 `
             })
 
 
-            html += '</div>'
+            html += `</div>
+            
+            <a class="to-top" href="javascript:scrollTo(0,0);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                </svg>
+            </a>
+`
 
             $('#html').html(html)
             $('#exportCon').show()
         })
 
-        $('#export').click(function(){
+        $('#export').click(function () {
             var tagA = document.createElement('a');
             tagA.href = './postman/1.postman_collection.json'
             tagA.download = 'postman_collection'

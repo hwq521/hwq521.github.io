@@ -6,7 +6,7 @@ html {
     border: 3px solid #ccc;
     border-radius: 5px;
     padding: 0 10px;
-    margin-top: 20px;
+    margin: 20px;
     overflow-x: auto;
 }
 
@@ -83,6 +83,7 @@ html {
     bottom: 40px;
     color: #333;
 }
+
 .to-top:hover {
     color: inherit;
     text-decoration: inherit;
@@ -91,4 +92,20 @@ html {
 .to-top::after {
     content: '返回顶部';
     font-family: serif;
+}
+
+.card:nth-child(odd) .card-header {
+    background-color: #f8f8ff;
+}
+
+.card:nth-child(even) .card-header {
+    background-color: rgb(225 225 250 / 67%);
+}
+
+.card-header {
+    border: none !important;
+}
+
+.card {
+    border: none !important;
 }
