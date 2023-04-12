@@ -552,6 +552,120 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "part2",
+			"item": [
+				{
+					"name": "湖南省人民政府",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://searching.hunan.gov.cn/hunan/001000000/news?q=%E6%88%BF%E5%B1%8B&sm=1&searchfields=&timetype=timeyz",
+							"protocol": "https",
+							"host": [
+								"searching",
+								"hunan",
+								"gov",
+								"cn"
+							],
+							"path": [
+								"hunan",
+								"001000000",
+								"news"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "%E6%88%BF%E5%B1%8B",
+									"description": "关键字"
+								},
+								{
+									"key": "sm",
+									"value": "1",
+									"description": "排序（0 按相关度 1按时间）"
+								},
+								{
+									"key": "searchfields",
+									"value": "",
+									"description": "搜索类型（为空 搜全文，title 搜标题）"
+								},
+								{
+									"key": "timetype",
+									"value": "timeyz",
+									"description": "时间类型（timeqb 时间不限，timeyz 一周内，timeyy 一月内，timeyn 一年内）"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "广东省人民政府（常规搜索）",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"position\": \"all\",\r\n    \"sort\": \"time\",\r\n    \"keywords\": \"养殖\",\r\n    \"time_to\": 1681268604,\r\n    \"time_from\": 1681182204,\r\n    \"site_id\": \"2\",\r\n    \"range\": \"site\",\r\n    \"page\": 1,\r\n    \"recommand\": 1,\r\n    \"gdbsDivision\": \"440000\",\r\n    \"service_area\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://search.gd.gov.cn/api/search/all",
+							"protocol": "https",
+							"host": [
+								"search",
+								"gd",
+								"gov",
+								"cn"
+							],
+							"path": [
+								"api",
+								"search",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "广东省人民政府（高级搜索）",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"page\": 1,\r\n    \"keywords\": \"养殖\", // 关键字\r\n    \"advance\": \"true\", // 开启高级搜索\r\n    \"keywords_not\": \"相关补贴\",// 不搜索以下关键词\r\n    \"title__not\": \"相关补贴\",// 不搜索以下关键词\r\n    \"sort\": \"time\",\r\n    \"time_to\": 1681270773,\r\n    \"time_from\": 1649734773,\r\n    \"title\": \"养殖\",\r\n    \"site_id\": \"2\",\r\n    \"range\": \"site\",\r\n    \"gdbsDivision\": \"440000\",\r\n    \"recommand\": 1,\r\n    \"service_area\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://search.gd.gov.cn/api/search/all",
+							"protocol": "https",
+							"host": [
+								"search",
+								"gd",
+								"gov",
+								"cn"
+							],
+							"path": [
+								"api",
+								"search",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
