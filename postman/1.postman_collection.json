@@ -664,6 +664,251 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "广西壮族自治区",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://www.gxzf.gov.cn/igs/front/search.jhtml?position=TITLE&timeOrder=desc&code=0f9498493ccd4d3eb6b2d1acbb4418c8&orderBy=time&pageSize=10&time=2023-04-05,2023-04-12&pageNumber=1&siteId=141&name=全自治区&searchWord=扶贫",
+							"protocol": "http",
+							"host": [
+								"www",
+								"gxzf",
+								"gov",
+								"cn"
+							],
+							"path": [
+								"igs",
+								"front",
+								"search.jhtml"
+							],
+							"query": [
+								{
+									"key": "position",
+									"value": "TITLE",
+									"description": "搜索方式（为空 正文，TITLE 标题）"
+								},
+								{
+									"key": "timeOrder",
+									"value": "desc",
+									"description": "时间排序( asc , desc)"
+								},
+								{
+									"key": "code",
+									"value": "0f9498493ccd4d3eb6b2d1acbb4418c8",
+									"description": "页面windows._searchConfig.code"
+								},
+								{
+									"key": "orderBy",
+									"value": "time",
+									"description": "排序类型（time 按时间，all 按相关度）"
+								},
+								{
+									"key": "pageSize",
+									"value": "10",
+									"description": "页数"
+								},
+								{
+									"key": "time",
+									"value": "2023-04-05,2023-04-12",
+									"description": "时间筛选"
+								},
+								{
+									"key": "pageNumber",
+									"value": "1",
+									"description": "页码"
+								},
+								{
+									"key": "siteId",
+									"value": "141",
+									"description": "站点id（141全自治区，14本站）"
+								},
+								{
+									"key": "name",
+									"value": "全自治区",
+									"description": "网站范围（全自治区，本站）"
+								},
+								{
+									"key": "searchWord",
+									"value": "扶贫",
+									"description": "关键字搜索"
+								},
+								{
+									"key": "type",
+									"value": "",
+									"description": "tab选项",
+									"disabled": true
+								},
+								{
+									"key": "sortByFocus",
+									"value": "true",
+									"disabled": true
+								},
+								{
+									"key": "sitetype",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "sitename",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "海南省人民政府（常规搜索）",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://www.hainan.gov.cn/a?siteCode=4600000001&allSearchWord=互联网&orSearchType=1&pageSize=10&pageNum=0&wordPlace=0&orderBy=1&labelHN=&column=2675",
+							"protocol": "http",
+							"host": [
+								"www",
+								"hainan",
+								"gov",
+								"cn"
+							],
+							"path": [
+								"a"
+							],
+							"query": [
+								{
+									"key": "siteCode",
+									"value": "4600000001",
+									"description": "政府网站标识码（首页的 #siteCode  input里的值）（必传）"
+								},
+								{
+									"key": "allSearchWord",
+									"value": "互联网",
+									"description": "关键字"
+								},
+								{
+									"key": "orSearchType",
+									"value": "1",
+									"description": "常规搜索传1，高级搜索（1 包含全部信息，2 包含任意信息）"
+								},
+								{
+									"key": "pageSize",
+									"value": "10",
+									"description": "页数"
+								},
+								{
+									"key": "pageNum",
+									"value": "0",
+									"description": "页码（当前页数-1，eg: 第一页是0，第二页是1）"
+								},
+								{
+									"key": "wordPlace",
+									"value": "0",
+									"description": "搜索位置（0标题和正文，1 标题）"
+								},
+								{
+									"key": "orderBy",
+									"value": "1",
+									"description": "常规搜索排序（按相关度 1 按时间 4）"
+								},
+								{
+									"key": "labelHN",
+									"value": "",
+									"description": "搜索区域（为空 本网站搜索，0 省政府办公厅文件，1 省政府文件）"
+								},
+								{
+									"key": "column",
+									"value": "2675",
+									"description": "栏目（tab页类型）（2675 为全部，其他类型请查看文档）"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "海南省人民政府（高级搜索）",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://www.hainan.gov.cn/a?siteCode=4600000001&allSearchWord=互联网 未来&noSearchWord=bb&orSearchType=1&startTime=2022-04-14 00:00:00&endTime=2023-04-13 23:59:59&pageSize=10&pageNum=0&labelHN=&orderBy=1&wordPlace=1&column=2675",
+							"protocol": "http",
+							"host": [
+								"www",
+								"hainan",
+								"gov",
+								"cn"
+							],
+							"path": [
+								"a"
+							],
+							"query": [
+								{
+									"key": "siteCode",
+									"value": "4600000001",
+									"description": "政府网站标识码（首页的 #siteCode  input里的值）（必传）"
+								},
+								{
+									"key": "allSearchWord",
+									"value": "互联网 未来",
+									"description": "关键字（多个关键字可用空格区分）"
+								},
+								{
+									"key": "noSearchWord",
+									"value": "bb",
+									"description": "不包含关键词"
+								},
+								{
+									"key": "orSearchType",
+									"value": "1",
+									"description": "常规搜索传1，高级搜索（1 包含全部信息，2 包含任意信息）"
+								},
+								{
+									"key": "startTime",
+									"value": "2022-04-14 00:00:00"
+								},
+								{
+									"key": "endTime",
+									"value": "2023-04-13 23:59:59"
+								},
+								{
+									"key": "pageSize",
+									"value": "10",
+									"description": "页数"
+								},
+								{
+									"key": "pageNum",
+									"value": "0",
+									"description": "页码（当前页数-1，eg: 第一页是0，第二页是1）"
+								},
+								{
+									"key": "labelHN",
+									"value": "",
+									"description": "搜索区域（为空 本网站搜索，0 省政府办公厅文件，1 省政府文件）"
+								},
+								{
+									"key": "orderBy",
+									"value": "1",
+									"description": "常规搜索排序（按相关度 1 按时间 4）"
+								},
+								{
+									"key": "wordPlace",
+									"value": "1",
+									"description": "搜索位置（0标题和正文，1 标题）"
+								},
+								{
+									"key": "column",
+									"value": "2675",
+									"description": "栏目（tab页类型）（2675 为全部，其他类型请查看文档）"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
