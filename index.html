@@ -30,20 +30,21 @@
     <script src="./lib/bootstrap/bootstrap.min.js"></script>
 
     <script>
+        var anchorPoint = decodeURI(window.location.href.split('#')[1] || '') || ''
         $.get('../json/data.json', function (result) {
             let html = '<div class="accordion" id="accordionExample">'
             result.map(function (item, key) {
                 html += `
                 <div class="card">
                     <div class="card-header" id="card-${key}">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
-                                data-target="#collapse-${key}" aria-expanded="true" aria-controls="collapse-${key}">
+                        <h2 class="mb-0" id="${item.name}">
+                            <a class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                data-target="#collapse-${key}" aria-expanded="true" aria-controls="collapse-${key}" href="#${item.name}">
                                 ${item.name}[${item.url}]${!item.html ? '[空]' : ''}
-                            </button>
+                            </a>
                         </h2>
                     </div>
-                    <div id="collapse-${key}" class="collapse" aria-labelledby="card-${key}"
+                    <div id="collapse-${key}" class="collapse ${anchorPoint === item.name ? 'show' : ''}" aria-labelledby="card-${key}"
                         data-parent="#accordionExample">
                         <div class="card-body editor-content-view">
                             ${item.html ? decodeURI(item.html) : '==暂无内容=='}
@@ -65,8 +66,20 @@
 
             $('#html').html(html)
             $('#exportCon').show()
+
+            if (anchorPoint) {
+                document.getElementById(anchorPoint).scrollIntoView()
+            }
         })
 
+        $(document).on('click', '.card-header', function (e) {
+            if (!$(this).parent().find('.collapse').hasClass('show')) {
+                location.href = $(this).find('a.btn').attr('href')
+            } else {
+                window.history.pushState({}, 0, window.location.href.replace(/(\#|#)[^'"]*/, ''));
+
+            }
+        })
         $('#export').click(function () {
             var tagA = document.createElement('a');
             tagA.href = './postman/1.postman_collection.json'
