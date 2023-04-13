@@ -31,7 +31,7 @@
 
     <script>
         var anchorPoint = decodeURI(window.location.href.split('#')[1] || '') || ''
-        $.get('../json/data.json', function (result) {
+        $.get('../json/data.json?'+Math.random(), function (result) {
             let html = '<div class="accordion" id="accordionExample">'
             result.map(function (item, key) {
                 html += `
