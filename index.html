@@ -30,7 +30,7 @@
     <script src="./lib/bootstrap/bootstrap.min.js"></script>
 
     <script>
-        $.get('./json/data.json', function (result) {
+        $.get('../json/data.json', function (result) {
             let html = '<div class="accordion" id="accordionExample">'
             result.map(function (item, key) {
                 html += `
@@ -72,6 +72,7 @@
             tagA.href = './postman/1.postman_collection.json'
             tagA.download = 'postman_collection'
             tagA.click()
+            tagA = null
         })
 
     </script>
