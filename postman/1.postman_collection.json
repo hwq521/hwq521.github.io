@@ -909,6 +909,70 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "重庆市人民政府（常规搜索）",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"7\",\r\n    \"tenantId\": 7,\r\n    \"dataTypeId\": \"7\",\r\n    \"searchWord\": \"扶贫\",\r\n    \"pageNo\": 1,\r\n    \"pageSize\": 10,\r\n    \"orderBy\": \"related\",\r\n    \"searchBy\": \"all\",\r\n    \"appendixType\": \"\",\r\n    \"beginDateTime\": \"1680278400000\",\r\n    \"endDateTime\": \"1681142399000\",\r\n    \"isSearchForced\": 0,\r\n    \"operationType\": \"search\",\r\n    \"configTenantId\": \"7\",\r\n    \"seniorBox\": \"0\",\r\n    \"sign\": \"签名\",\r\n    \"isAdvancedSearch\": 0,\r\n    \"filters\": [],\r\n    \"pager\": {},\r\n    \"searchInfo\": {},\r\n    \"dataTypes\": [],\r\n    \"historySearchWords\": [],\r\n    \"advancedFilters\": [],\r\n    \"customFilters\": [],\r\n    \"areaCode\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://www.cq.gov.cn/irs/front/search",
+							"protocol": "http",
+							"host": [
+								"www",
+								"cq",
+								"gov",
+								"cn"
+							],
+							"path": [
+								"irs",
+								"front",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "重庆市人民政府（高级搜索）",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"7\",\r\n    \"tenantId\": 7,\r\n    \"searchWord\": \"扶贫\",\r\n    \"dataTypeId\": \"7\",\r\n    \"pageNo\": 1,\r\n    \"pageSize\": 10,\r\n    \"orderBy\": \"time\",\r\n    \"searchBy\": \"title\",\r\n    \"appendixType\": \"\",\r\n    \"granularity\": \"ALL\",\r\n    \"beginDateTime\": \"\",\r\n    \"endDateTime\": \"\",\r\n    \"isSearchForced\": 0,\r\n    \"filters\": [],\r\n    \"sign\": \"78eba94c-3c86-43e5-a604-86c0e086fc2d\",\r\n    \"pager\": {},\r\n    \"searchInfo\": {},\r\n    \"dataTypes\": [],\r\n    \"configTenantId\": \"7\",\r\n    \"historySearchWords\": [\r\n        \"扶贫\",\r\n        \"扶贫 乡镇\",\r\n        \"政策\"\r\n    ],\r\n    \"operationType\": \"search\",\r\n    \"seniorBox\": \"0\",\r\n    \"isDefaultAdvanced\": 1,\r\n    \"isAdvancedSearch\": 1,\r\n    \"advancedFilters\": [\r\n        {\r\n            \"fieldId\": \"\",\r\n            \"fieldName\": \"containsAll\",\r\n            \"searchWord\": [\r\n                \"扶贫\"\r\n            ]\r\n        },\r\n        {\r\n            \"fieldId\": \"\",\r\n            \"fieldName\": \"containsOne\",\r\n            \"searchWord\": [\r\n                \"搬迁\"\r\n            ]\r\n        },\r\n        {\r\n            \"fieldId\": \"\",\r\n            \"fieldName\": \"none\",\r\n            \"searchWord\": [\r\n                \"标准\"\r\n            ]\r\n        }\r\n    ],\r\n    \"customFilters\": [],\r\n    \"areaCode\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://www.cq.gov.cn/irs/front/search",
+							"protocol": "http",
+							"host": [
+								"www",
+								"cq",
+								"gov",
+								"cn"
+							],
+							"path": [
+								"irs",
+								"front",
+								"search"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
