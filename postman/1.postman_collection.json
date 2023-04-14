@@ -973,6 +973,78 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "四川省人民政府（常规搜索）",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "content-type",
+								"value": " application/x-www-form-urlencoded; charset=UTF-8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "tab=all&qt=%E5%9B%9B%E5%B7%9D%E7%9C%81&siteCode=5100000062&toolsStatus=1&sort=relevance&keyPlace=0&locationCode=510000000000&page=1&pageSize=20&ie=8fe433bb-0cb9-4561-aa93-9a7f2cae284e",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.so-gov.cn/query/s",
+							"protocol": "https",
+							"host": [
+								"api",
+								"so-gov",
+								"cn"
+							],
+							"path": [
+								"query",
+								"s"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "四川省人民政府（高级搜索）",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "content-type",
+								"value": " application/x-www-form-urlencoded; charset=UTF-8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "siteCode=5100000062&tab=all&qt=(%22%E5%9B%9B%E5%B7%9D%E7%9C%81%22)++AND+(%22%E5%8A%9E%E6%B3%95%22)++AND+(%2211%22)+NOT+(%22%E8%AE%A4%E8%AF%81%22)&fileType=&timeOption=0&sort=relevance&keyPlace=0&adv=1&locationCode=510000000000&page=1&pageSize=20&ie=8fe433bb-0cb9-4561-aa93-9a7f2cae284e",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.so-gov.cn/query/s",
+							"protocol": "https",
+							"host": [
+								"api",
+								"so-gov",
+								"cn"
+							],
+							"path": [
+								"query",
+								"s"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
