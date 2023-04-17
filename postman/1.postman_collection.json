@@ -1123,6 +1123,60 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "全国建筑市场监督公共服务平台",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": " Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://jzsc.mohurd.gov.cn/APi/webApi/dataservice/query/staff/list?ry_reg_type=RY_ZCLB_011,RY_ZCLB_012&ry_name=李超&pg=0&pgsz=15",
+							"protocol": "https",
+							"host": [
+								"jzsc",
+								"mohurd",
+								"gov",
+								"cn"
+							],
+							"path": [
+								"APi",
+								"webApi",
+								"dataservice",
+								"query",
+								"staff",
+								"list"
+							],
+							"query": [
+								{
+									"key": "ry_reg_type",
+									"value": "RY_ZCLB_011,RY_ZCLB_012",
+									"description": "人员类别"
+								},
+								{
+									"key": "ry_name",
+									"value": "李超",
+									"description": "姓名"
+								},
+								{
+									"key": "pg",
+									"value": "0",
+									"description": "页码"
+								},
+								{
+									"key": "pgsz",
+									"value": "15",
+									"description": "页数"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}

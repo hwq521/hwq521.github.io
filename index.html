@@ -8,6 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+
 </head>
 
 <body>
@@ -28,10 +30,13 @@
     <script src="./lib/jquery/jquery.min.js"></script>
     <script src="./lib/bootstrap/popper.min.js"></script>
     <script src="./lib/bootstrap/bootstrap.min.js"></script>
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/go.min.js"></script>
+    </script>
     <script>
         var anchorPoint = decodeURI(window.location.href.split('#')[1] || '') || ''
-        $.get('../json/data.json?'+Math.random(), function (result) {
+        $.get('../json/data.json?' + Math.random(), function (result) {
             let html = '<div class="accordion" id="accordionExample">'
             result.map(function (item, key) {
                 html += `
@@ -66,6 +71,11 @@
 
             $('#html').html(html)
             $('#exportCon').show()
+
+            document.querySelectorAll('pre code').forEach((el) => {
+                // doc: https://www.fenxianglu.cn/highlightjs/docs/start/
+                hljs.highlightElement(el);
+            });
 
             if (anchorPoint) {
                 document.getElementById(anchorPoint).scrollIntoView()

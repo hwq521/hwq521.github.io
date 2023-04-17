@@ -23,17 +23,6 @@ html {
     background-color: #f1f1f1;
 }
 
-.editor-content-view code {
-    font-family: monospace;
-    background-color: #eee;
-    padding: 3px;
-    border-radius: 3px;
-}
-
-.editor-content-view pre>code {
-    display: block;
-    padding: 10px;
-}
 
 .editor-content-view table {
     border-collapse: collapse;
