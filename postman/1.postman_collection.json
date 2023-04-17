@@ -1177,6 +1177,70 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "黑龙江人民政府",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": " application/x-www-form-urlencoded; charset=UTF-8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "allSearchWord=%25E6%2589%25B6%25E8%25B4%25AB3&noSearchWord=&orSearchType=1&startTime=&topical=&docName=&endTime=&pageSize=10&pageNum=0&siteCode=2300000061&orderBy=2&wordPlace=0&timeStamp=0&column=%25E5%2585%25A8%25E9%2583%25A8"
+						},
+						"url": {
+							"raw": "https://www.hlj.gov.cn/search5/search/s",
+							"protocol": "https",
+							"host": [
+								"www",
+								"hlj",
+								"gov",
+								"cn"
+							],
+							"path": [
+								"search5",
+								"search",
+								"s"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "上海市人民政府",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": " application/x-www-form-urlencoded; charset=UTF-8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "text=%E5%B9%BC%E5%84%BF%E5%85%A5%E5%9B%AD&pageNo=1&newsPageNo=1&pageSize=20&category4=%E8%A1%8C%E6%94%BF%E8%AE%B8%E5%8F%AF&category6=&category7=all&sortMode=2&searchMode=2&timeRange=3&searchText=%E5%B9%BC%E5%84%BF%E5%85%A5%E5%9B%AD"
+						},
+						"url": {
+							"raw": "https://search.sh.gov.cn/searchResult",
+							"protocol": "https",
+							"host": [
+								"search",
+								"sh",
+								"gov",
+								"cn"
+							],
+							"path": [
+								"searchResult"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
