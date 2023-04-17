@@ -550,6 +550,84 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "吉林省人民政府（高级搜索）",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": " Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "params",
+									"value": "{\"word\":\"\",\"page\":1,\"size\":10,\"stype\":\"10\",\"area\":\"220000\",\"atype\":\"1\",\"ttype\":\"0\",\"start\":\"\",\"end\":\"\",\"itype\":\"\",\"sort\":\"0\",\"aword\":\"\",\"hword\":\"社保\",\"nword\":\"\",\"dtword\":\"\",\"scope\":\"2\",\"selecttp\":\"10\",\"flag\":\"senior\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://intellsearch.jl.gov.cn/api/data/list",
+							"protocol": "https",
+							"host": [
+								"intellsearch",
+								"jl",
+								"gov",
+								"cn"
+							],
+							"path": [
+								"api",
+								"data",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "吉林省人民政府（常规搜索）",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": " Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "params",
+									"value": "{\"word\":\"社保\",\"page\":1,\"size\":10,\"stype\":\"10\",\"area\":\"220000\",\"atype\":\"1\",\"ttype\":\"0\",\"start\":\"\",\"end\":\"\",\"itype\":\"\",\"sort\":\"0\",\"aword\":\"\",\"hword\":\"\",\"nword\":\"\",\"dtword\":\"\",\"scope\":\"2\",\"selecttp\":\"10\",\"flag\":\"\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://intellsearch.jl.gov.cn/api/data/list",
+							"protocol": "https",
+							"host": [
+								"intellsearch",
+								"jl",
+								"gov",
+								"cn"
+							],
+							"path": [
+								"api",
+								"data",
+								"list"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
