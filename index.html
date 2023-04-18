@@ -18,6 +18,8 @@
             点击按钮导出postman请求组
             <button type="submit" class="btn btn-primary" id="export">导出</button>
         </div>
+        <div class="mt-1 alert alert-primary" role="alert" id="findCount" style="display:none">
+        </div>
         <div id="html">
             <div class="loading">
                 <div class="spinner-border" role="status">
@@ -38,7 +40,9 @@
         var anchorPoint = decodeURI(window.location.href.split('#')[1] || '') || ''
         $.get('../json/data.json?' + Math.random(), function (result) {
             let html = '<div class="accordion" id="accordionExample">'
+            let num = 0;
             result.map(function (item, key) {
+                num += item.html ? 1 : 0;
                 html += `
                 <div class="card">
                     <div class="card-header" id="card-${key}">
@@ -69,9 +73,10 @@
             </a>
 `
 
-            $('#html').html(html)
-            $('#exportCon').show()
-
+            $('#html').html(html);
+            $('#findCount').html(`目前文档中有${result.length}个，已完善${num}个，还剩余${result.length - num}个`);
+            $('#exportCon').show();
+            $('#findCount').show();
             document.querySelectorAll('pre code').forEach((el) => {
                 // doc: https://www.fenxianglu.cn/highlightjs/docs/start/
                 hljs.highlightElement(el);
