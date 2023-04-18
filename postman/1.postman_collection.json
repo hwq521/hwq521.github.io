@@ -1373,6 +1373,71 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "西藏自治区人民政府",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://www.xizang.gov.cn/igs/front/search.jhtml?code=30e4960928e74a14a2c05439d100cfc0&advancedQuery.includesAny=%E8%87%AA%E6%B2%BB%E5%8C%BA&advancedQuery.notIncludes=%E6%8C%82%E7%89%8C&advancedQuery.root.keyword=%E6%97%85%E6%B8%B8+%E7%94%B5%E8%AF%9D&pageNumber=2&pageSize=10&searchWord=%E6%97%85%E6%B8%B8+%E7%94%B5%E8%AF%9D&siteId=2&type=17",
+							"protocol": "http",
+							"host": [
+								"www",
+								"xizang",
+								"gov",
+								"cn"
+							],
+							"path": [
+								"igs",
+								"front",
+								"search.jhtml"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "30e4960928e74a14a2c05439d100cfc0"
+								},
+								{
+									"key": "advancedQuery.includesAny",
+									"value": "%E8%87%AA%E6%B2%BB%E5%8C%BA",
+									"description": "自治区"
+								},
+								{
+									"key": "advancedQuery.notIncludes",
+									"value": "%E6%8C%82%E7%89%8C",
+									"description": "挂牌"
+								},
+								{
+									"key": "advancedQuery.root.keyword",
+									"value": "%E6%97%85%E6%B8%B8+%E7%94%B5%E8%AF%9D",
+									"description": "旅游 电话"
+								},
+								{
+									"key": "pageNumber",
+									"value": "2"
+								},
+								{
+									"key": "pageSize",
+									"value": "10"
+								},
+								{
+									"key": "searchWord",
+									"value": "%E6%97%85%E6%B8%B8+%E7%94%B5%E8%AF%9D",
+									"description": "旅游 电话"
+								},
+								{
+									"key": "siteId",
+									"value": "2"
+								},
+								{
+									"key": "type",
+									"value": "17"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
