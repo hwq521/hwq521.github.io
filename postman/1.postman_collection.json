@@ -1241,6 +1241,70 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "贵州省人民政府（常规搜索）",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"tenantId\":\"186\",\"configTenantId\":\"\",\"searchWord\":\"稳就业\",\"dataTypeId\":\"963\",\"orderBy\":\"related\",\"searchBy\":\"all\",\"granularity\":\"ALL\",\"beginDateTime\":\"\",\"endDateTime\":\"\",\"isSearchForced\":0,\"pageNo\":1,\"pageSize\":9}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://www.guizhou.gov.cn/irs/front/search",
+							"protocol": "http",
+							"host": [
+								"www",
+								"guizhou",
+								"gov",
+								"cn"
+							],
+							"path": [
+								"irs",
+								"front",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "贵州省人民政府（高级搜索）",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tenantId\": \"186\",\r\n    \"configTenantId\": \"\",\r\n    \"tenantIds\": \"\",\r\n    \"searchWord\": \"\",\r\n    \"historySearchWords\": [\r\n        \"深入学习贯彻党的二十大精神\",\r\n        \"稳就业\",\r\n        \"新国发2号\"\r\n    ],\r\n    \"dataTypeId\": \"963\",\r\n    \"orderBy\": \"related\",\r\n    \"searchBy\": \"all\",\r\n    \"appendixType\": \"\",\r\n    \"granularity\": \"CUSTOM\",\r\n    \"beginDateTime\": 1648742400000,\r\n    \"endDateTime\": 1680364799999,\r\n    \"pageNo\": 1,\r\n    \"pageSize\": 9,\r\n    \"isDefaultAdvanced\": \"1\",\r\n    \"advancedFilters\": [\r\n        {\r\n            \"fieldId\": \"\",\r\n            \"fieldName\": \"containsAll\",\r\n            \"searchWord\": [\r\n                \"深入学习贯彻党的二十大精神\"\r\n            ]\r\n        },\r\n        {\r\n            \"fieldId\": \"\",\r\n            \"fieldName\": \"containsOne\",\r\n            \"searchWord\": [\r\n                \"贵州新闻联播\"\r\n            ]\r\n        },\r\n        {\r\n            \"fieldId\": \"\",\r\n            \"fieldName\": \"none\",\r\n            \"searchWord\": [\r\n                \"热潮\"\r\n            ]\r\n        }\r\n    ],\r\n    \"isAdvancedSearch\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://www.guizhou.gov.cn/irs/front/search",
+							"protocol": "http",
+							"host": [
+								"www",
+								"guizhou",
+								"gov",
+								"cn"
+							],
+							"path": [
+								"irs",
+								"front",
+								"search"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
