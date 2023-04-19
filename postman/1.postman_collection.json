@@ -1651,6 +1651,39 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "青海省人民政府",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"pn\":0,\"rn\":50,\"sdt\":\"2023-03-01 00:00:00\",\"edt\":\"2023-04-10 23:59:59\",\"wd\":\"就业 企业新增\",\"inc_wd\":\"\",\"exc_wd\":\"\",\"fields\":\"title;content;\",\"cnum\":\"011001\",\"sort\":\"{\\\"categorynum\\\":1}\"}",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://www.qhzwfw.gov.cn/qhinteligentsearch/rest/esinteligentsearch/getFullTextDataNew",
+							"protocol": "http",
+							"host": [
+								"www",
+								"qhzwfw",
+								"gov",
+								"cn"
+							],
+							"path": [
+								"qhinteligentsearch",
+								"rest",
+								"esinteligentsearch",
+								"getFullTextDataNew"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
