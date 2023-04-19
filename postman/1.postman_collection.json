@@ -1716,6 +1716,38 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "新疆维吾尔自治区人民政府（高级搜索）",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": " application/x-www-form-urlencoded; charset=UTF-8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "searchWord=%25E6%2597%2585%25E6%25B8%25B8&siteCode=6500000034&column=%25E5%2585%25A8%25E5%25B9%25B3%25E5%258F%25B0&wordPlace=1&orderBy=0&startTime=&endTime=&pageSize=10&pageNum=0&timeStamp=0&sonSiteCode=&checkHandle=1"
+						},
+						"url": {
+							"raw": "http://www.xinjiang.gov.cn/guestweb/sHtml",
+							"protocol": "http",
+							"host": [
+								"www",
+								"xinjiang",
+								"gov",
+								"cn"
+							],
+							"path": [
+								"guestweb",
+								"sHtml"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
