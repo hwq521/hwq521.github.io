@@ -1438,6 +1438,219 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "陕西省人民政府（常规搜索）",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tenantId\": \"22\",\r\n    \"searchWord\": \"农业\",\r\n    \"dataTypeId\": 19,\r\n    \"orderBy\": \"time\",\r\n    \"searchBy\": \"all\",\r\n    \"granularity\": \"ALL\",\r\n    \"pageNo\": 1,\r\n    \"pageSize\": 10,\r\n    \"endDateTime\": \"\",\r\n    \"beginDateTime\": \"\",\r\n    \"customFilter\": {\r\n        \"operator\": \"and\",\r\n        \"properties\": [],\r\n        \"filters\": []\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://www.shaanxi.gov.cn/irs/front/search",
+							"protocol": "http",
+							"host": [
+								"www",
+								"shaanxi",
+								"gov",
+								"cn"
+							],
+							"path": [
+								"irs",
+								"front",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "陕西省人民政府（高级搜索）",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tenantId\": \"22\",\r\n    \"searchWord\": \"\",\r\n    \"dataTypeId\": \"101\",\r\n    \"orderBy\": \"related\",\r\n    \"searchBy\": \"all\",\r\n    \"granularity\": \"ALL\",\r\n    \"pageNo\": \"1\",\r\n    \"pageSize\": \"10\",\r\n    \"endDateTime\": 1681142399000,\r\n    \"beginDateTime\": 1680278400000,\r\n    \"advancedFilters\": [\r\n        {\r\n            \"fieldId\": 1,\r\n            \"fieldName\": \"containsAll\",\r\n            \"searchWord\": [\r\n                \"农业\",\r\n                \"陕西省\"\r\n            ]\r\n        },\r\n        {\r\n            \"fieldId\": \"\",\r\n            \"fieldName\": \"containsOne\",\r\n            \"searchWord\": []\r\n        },\r\n        {\r\n            \"fieldId\": \"\",\r\n            \"fieldName\": \"none\",\r\n            \"searchWord\": [\r\n                \"召开\"\r\n            ]\r\n        }\r\n    ],\r\n    \"isAdvancedSearch\": 1,\r\n    \"isDefaultAdvanced\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://www.shaanxi.gov.cn/irs/front/search",
+							"protocol": "http",
+							"host": [
+								"www",
+								"shaanxi",
+								"gov",
+								"cn"
+							],
+							"path": [
+								"irs",
+								"front",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "甘肃省人民政府（高级搜索）",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "4hP44ZykCTt5S=5b2Wvna5on9H8Sp7vKoSZFcoXxEkVbQdCYnrJAccWivwRVWJ4au.g6eGVm19GXsElwZr..UTIJKTUPqgY9oP5qa;4hP44ZykCTt5T=YQQEqceesNWjPkFGQRK__HP1O8J3.EKKkfll21axdHuiZT3R5S.Dd63jK.h0wf8O25mOlLsJwwo1x_gdVInbQxw0oBf7iKXD5Id.aRWNNMYKADH3oDSY1K4mJfRorGpcQQNuw.B9IvRqQs2.z5yUXsNe01rigphAbJX5g9MApdgLBs2b89GDGTcbA1_Smh3VcCrzKTP4Qt7KHODfqU.RAG",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://www.gansu.gov.cn/guestweb4/h?column=%25E5%2585%25A8%25E9%2583%25A8&wordPlace=0&startTime=&endTime=&pageSize=10&pageNum=0&siteCode=6200000001&allSearchWord=扶贫 全省&noSearchWord=22&orSearchType=1&orderBy=2",
+							"protocol": "http",
+							"host": [
+								"www",
+								"gansu",
+								"gov",
+								"cn"
+							],
+							"path": [
+								"guestweb4",
+								"h"
+							],
+							"query": [
+								{
+									"key": "column",
+									"value": "%25E5%2585%25A8%25E9%2583%25A8",
+									"description": "请求请在页面获取到cookie"
+								},
+								{
+									"key": "wordPlace",
+									"value": "0"
+								},
+								{
+									"key": "startTime",
+									"value": ""
+								},
+								{
+									"key": "endTime",
+									"value": ""
+								},
+								{
+									"key": "pageSize",
+									"value": "10"
+								},
+								{
+									"key": "pageNum",
+									"value": "0"
+								},
+								{
+									"key": "siteCode",
+									"value": "6200000001"
+								},
+								{
+									"key": "allSearchWord",
+									"value": "扶贫 全省"
+								},
+								{
+									"key": "noSearchWord",
+									"value": "22"
+								},
+								{
+									"key": "orSearchType",
+									"value": "1"
+								},
+								{
+									"key": "orderBy",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "甘肃省人民政府（常规搜索）",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "4hP44ZykCTt5S=5b2Wvna5on9H8Sp7vKoSZFcoXxEkVbQdCYnrJAccWivwRVWJ4au.g6eGVm19GXsElwZr..UTIJKTUPqgY9oP5qa;4hP44ZykCTt5T=m8biVIOeKeaL545hJ_KhuZgXl0VDk_OnyOUDct9qPou3pym4Y9UtFnYq4pFm.jiMLuz.aP7FwVfkA_aXCDJfNC59KkaZGmXvjpp7hIOmUwh28HGPEQi8.DfCOwz2kI0_VV1xdq28XbQ7_4165AG0DYIBs0fjbFh4ukGVp.7cBUeVtotDdA78.fGUhsZ8MMUEp1Y3uXLUXUUupBLZLzP3uP7CSjrZlPMVZ1zYN7cnBzHTScyCVyVL7MC65vey5hH2XHMWMLh3ZdvpLhpikrb6rLf_Wbi2AHHKl9xhBdPG3.gpRmQE4CkndMWWG1ukVAuaYzYAbYxdQVOFUMlZ8A7RRyThMGz8QA5dO.rRxwgQgY3",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://www.gansu.gov.cn/guestweb4/s?searchWord=%25E6%2589%25B6%25E8%25B4%25AB&column=%25E5%2585%25A8%25E9%2583%25A8&wordPlace=1&orderBy=2&startTime=&endTime=&pageSize=10&pageNum=0&timeStamp=0&siteCode=6200000001&checkHandle=1",
+							"protocol": "http",
+							"host": [
+								"www",
+								"gansu",
+								"gov",
+								"cn"
+							],
+							"path": [
+								"guestweb4",
+								"s"
+							],
+							"query": [
+								{
+									"key": "searchWord",
+									"value": "%25E6%2589%25B6%25E8%25B4%25AB"
+								},
+								{
+									"key": "column",
+									"value": "%25E5%2585%25A8%25E9%2583%25A8"
+								},
+								{
+									"key": "wordPlace",
+									"value": "1"
+								},
+								{
+									"key": "orderBy",
+									"value": "2"
+								},
+								{
+									"key": "startTime",
+									"value": ""
+								},
+								{
+									"key": "endTime",
+									"value": ""
+								},
+								{
+									"key": "pageSize",
+									"value": "10"
+								},
+								{
+									"key": "pageNum",
+									"value": "0"
+								},
+								{
+									"key": "timeStamp",
+									"value": "0"
+								},
+								{
+									"key": "siteCode",
+									"value": "6200000001"
+								},
+								{
+									"key": "checkHandle",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
