@@ -1684,6 +1684,38 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "宁夏省人民政府（高级搜索）",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tenantIds\": \"19\",\r\n    \"dataTypeId\": 4,\r\n    \"orderBy\": \"time\",\r\n    \"searchBy\": \"title\",\r\n    \"pageNo\": 1,\r\n    \"pageSize\": 10,\r\n    \"endDateTime\": 1680364799000,\r\n    \"beginDateTime\": 1648742400000,\r\n    \"configTenantId\": \"19\",\r\n    \"advancedFilters\": [\r\n        {\r\n            \"fieldId\": \"\",\r\n            \"fieldName\": \"containsAll\",\r\n            \"searchWord\": [\r\n                \"扶贫\"\r\n            ]\r\n        },\r\n        {\r\n            \"fieldId\": \"\",\r\n            \"fieldName\": \"none\",\r\n            \"searchWord\": [\"银川召开\"]\r\n        }\r\n    ],\r\n    \"isDefaultAdvanced\": 1,\r\n    \"isAdvancedSearch\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://www.nx.gov.cn/irs/front/search",
+							"protocol": "https",
+							"host": [
+								"www",
+								"nx",
+								"gov",
+								"cn"
+							],
+							"path": [
+								"irs",
+								"front",
+								"search"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
