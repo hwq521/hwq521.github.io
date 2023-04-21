@@ -1917,6 +1917,74 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "中证网（高级搜索）",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://search.cs.com.cn/search?timescope=month&timescopecolumn=DOCPUBTIME&orderby=RELEVANCE&channelid=215308&andsen=证券&total=&orsen=变革&exclude=高质量发展 &searchword=&perpage=",
+							"protocol": "https",
+							"host": [
+								"search",
+								"cs",
+								"com",
+								"cn"
+							],
+							"path": [
+								"search"
+							],
+							"query": [
+								{
+									"key": "searchscope",
+									"value": "DOCTITLE",
+									"disabled": true
+								},
+								{
+									"key": "timescope",
+									"value": "month"
+								},
+								{
+									"key": "timescopecolumn",
+									"value": "DOCPUBTIME"
+								},
+								{
+									"key": "orderby",
+									"value": "RELEVANCE"
+								},
+								{
+									"key": "channelid",
+									"value": "215308"
+								},
+								{
+									"key": "andsen",
+									"value": "证券"
+								},
+								{
+									"key": "total",
+									"value": ""
+								},
+								{
+									"key": "orsen",
+									"value": "变革"
+								},
+								{
+									"key": "exclude",
+									"value": "高质量发展 "
+								},
+								{
+									"key": "searchword",
+									"value": ""
+								},
+								{
+									"key": "perpage",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
