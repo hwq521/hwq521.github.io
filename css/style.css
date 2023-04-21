@@ -98,3 +98,9 @@ html {
 .card {
     border: none !important;
 }
+.span-split a{
+    display: inline-block;
+}
+.span-split a+a::before{
+    content: '、';
+}

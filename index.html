@@ -20,6 +20,8 @@
         </div>
         <div class="mt-1 alert alert-primary" role="alert" id="findCount" style="display:none">
         </div>
+        <div class="mt-1 alert alert-primary span-split" role="alert" id="urlencode" style="display:none">
+        </div>
         <div id="html">
             <div class="loading">
                 <div class="spinner-border" role="status">
@@ -40,6 +42,8 @@
         var anchorPoint = decodeURI(window.location.href.split('#')[1] || '') || ''
         $.get('../json/data.json?' + Math.random(), function (result) {
             let html = '<div class="accordion" id="accordionExample">'
+            let urlencodePageHtml = '';
+            let urlencodePageNum = 0;
             let num = 0;
             result.map(function (item, key) {
                 num += item.html ? 1 : 0;
@@ -49,7 +53,7 @@
                         <h2 class="mb-0" id="${item.name}">
                             <a class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
                                 data-target="#collapse-${key}" aria-expanded="true" aria-controls="collapse-${key}" href="#${item.name}">
-                                ${item.name}[${item.url}]${!item.html ? '[空]' : ''}
+                                ${item.name}[${item.url}]${!item.html ? (item.urlencode?'[url参数加密]':'[空]') : ''}
                             </a>
                         </h2>
                     </div>
@@ -61,6 +65,10 @@
                     </div>
                 </div>
                 `
+                if (item.urlencode) {
+                    urlencodePageNum++
+                    urlencodePageHtml += `<a href="${item.url}" target="_blank">[${item.name}]</a>`
+                }
             })
 
 
@@ -74,7 +82,12 @@
 `
 
             $('#html').html(html);
-            $('#findCount').html(`目前文档中有${result.length}个，已完善${num}个，还剩余${result.length - num}个`);
+            if (urlencodePageHtml) {
+                urlencodePageHtml += `以上${urlencodePageNum}个页面url参数均有加密。`
+                $('#urlencode').html(urlencodePageHtml);
+                $('#urlencode').show();
+            }
+            $('#findCount').html(`目前文档中有${result.length}个，已完善${num}个，还剩余${result.length - num - urlencodePageNum}个${urlencodePageNum ? ('，还有'+urlencodePageNum+'个页面url参数加密暂时无法编写') :''}`);
             $('#exportCon').show();
             $('#findCount').show();
             document.querySelectorAll('pre code').forEach((el) => {
