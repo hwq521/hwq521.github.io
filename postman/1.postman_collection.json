@@ -2031,6 +2031,138 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "信用中国",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://public.creditchina.gov.cn/private-api/catalogSearchHome?keyword=%E8%85%BE%E8%AE%AF&tableName=credit_xyzx_tyshxydm&searchState=2&page=1&pageSize=10",
+							"protocol": "https",
+							"host": [
+								"public",
+								"creditchina",
+								"gov",
+								"cn"
+							],
+							"path": [
+								"private-api",
+								"catalogSearchHome"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "%E8%85%BE%E8%AE%AF"
+								},
+								{
+									"key": "tableName",
+									"value": "credit_xyzx_tyshxydm"
+								},
+								{
+									"key": "searchState",
+									"value": "2"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "证券日报",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://search.zqrb.cn/search.php?src=all&q=%E4%B8%8A%E5%B8%82+&f=_all&s=newsdate_DESC",
+							"protocol": "http",
+							"host": [
+								"search",
+								"zqrb",
+								"cn"
+							],
+							"path": [
+								"search.php"
+							],
+							"query": [
+								{
+									"key": "src",
+									"value": "all"
+								},
+								{
+									"key": "q",
+									"value": "%E4%B8%8A%E5%B8%82+"
+								},
+								{
+									"key": "f",
+									"value": "_all"
+								},
+								{
+									"key": "s",
+									"value": "newsdate_DESC"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "证券时报",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "user-agent",
+								"value": " Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48",
+								"type": "text"
+							},
+							{
+								"key": "x-requested-with",
+								"value": " XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://www.stcn.com/article/search.html?search_type=news&keyword=%E4%B8%8A%E5%B8%82&page_time=2&page_size=1",
+							"protocol": "https",
+							"host": [
+								"www",
+								"stcn",
+								"com"
+							],
+							"path": [
+								"article",
+								"search.html"
+							],
+							"query": [
+								{
+									"key": "search_type",
+									"value": "news"
+								},
+								{
+									"key": "keyword",
+									"value": "%E4%B8%8A%E5%B8%82"
+								},
+								{
+									"key": "page_time",
+									"value": "2"
+								},
+								{
+									"key": "page_size",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
